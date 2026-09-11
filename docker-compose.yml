@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  # ----------------------------------------------------
+  # PostgreSQL Database
+  # ----------------------------------------------------
+  postgres:
+    image: postgres:15-alpine
+    container_name: byteascend-postgres
+    environment:
+      POSTGRES_DB: byteascend_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # ----------------------------------------------------
+  # Redis Cache & Rate Limiting
+  # ----------------------------------------------------
+  redis:
+    image: redis:7-alpine
+    container_name: byteascend-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  # ----------------------------------------------------
+  # Judge0 Ecosystem (Sandbox execution)
+  # ----------------------------------------------------
+  server:
+    image: judge0/judge0:1.13.1
+    container_name: judge0-server
+    volumes:
+      - ./judge0.conf:/judge0.conf:ro
+    ports:
+      - "2358:2358"
+    privileged: true
+    restart: always
+
+  workers:
+    image: judge0/judge0:1.13.1
+    container_name: judge0-workers
+    command: ["./scripts/workers"]
+    volumes:
+      - ./judge0.conf:/judge0.conf:ro
+    privileged: true
+    restart: always
+
+volumes:
+  postgres_data:

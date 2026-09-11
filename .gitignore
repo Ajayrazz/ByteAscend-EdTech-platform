@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Backend
+backend/**/target/
+backend/**/logs/
+backend/**/*.jar
+backend/**/*.war
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
