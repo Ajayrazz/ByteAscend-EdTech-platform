@@ -5,7 +5,7 @@ spring:
   application:
     name: user-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/byteascend_db
+    url: jdbc:postgresql://localhost:5440/byteascend_db
     username: admin
     password: adminpassword
   jpa:
