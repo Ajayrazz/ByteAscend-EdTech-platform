@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Code2, Sun } from "lucide-react";
+import { Sun } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { useAuthStore } from "@/lib/store/useAuthStore";
 import { useState, useEffect } from "react";
@@ -25,13 +26,17 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 glass border-b-0 border-white/5"
     >
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="bg-gradient-to-br from-cyan-500 to-emerald-500 p-2 rounded-xl text-white shadow-lg group-hover:scale-105 transition-transform">
-            <Code2 size={24} strokeWidth={2.5} />
+        <Link href="/" className="flex items-center group py-2">
+          <div className="relative w-[140px] md:w-[180px] h-[40px] md:h-[50px]">
+            <Image 
+              src="/logo.png" 
+              alt="ByteAscend Logo" 
+              fill
+              sizes="(max-width: 768px) 140px, 180px"
+              className="object-contain object-left group-hover:scale-105 transition-transform duration-300 mix-blend-screen"
+              priority
+            />
           </div>
-          <span className="text-2xl font-outfit font-bold tracking-tight text-white">
-            Byte<span className="text-cyan-400">Ascend</span>
-          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">

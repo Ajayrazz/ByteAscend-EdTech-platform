@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { 
   LayoutDashboard, 
   BookOpen, 
@@ -31,11 +32,15 @@ export default function Sidebar() {
 
   return (
     <div className="w-64 h-screen fixed left-0 top-0 glass border-r border-white/5 flex flex-col pt-6 z-20 hidden md:flex">
-      <div className="px-6 mb-8">
-        <Link href="/dashboard" className="inline-block">
-          <h2 className="text-2xl font-outfit font-bold text-white tracking-tight">
-            Byte<span className="text-cyan-400">Ascend</span>
-          </h2>
+      <div className="h-20 flex items-center px-6 border-b border-white/5 py-4">
+        <Link href="/" className="flex items-center group relative w-[140px] h-[40px]">
+          <Image 
+            src="/logo.png" 
+            alt="ByteAscend Logo" 
+            fill
+            sizes="140px"
+            className="object-contain object-left group-hover:scale-105 transition-transform mix-blend-screen"
+          />
         </Link>
       </div>
 

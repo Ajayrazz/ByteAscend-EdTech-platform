@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Code2 } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,11 +7,14 @@ export default function Footer() {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <Code2 size={24} className="text-cyan-400" />
-              <span className="text-2xl font-outfit font-bold tracking-tight text-white">
-                Byte<span className="text-cyan-400">Ascend</span>
-              </span>
+            <Link href="/" className="flex items-center group mb-6 inline-block relative w-[180px] h-[50px]">
+              <Image 
+                src="/logo.png" 
+                alt="ByteAscend Logo" 
+                fill
+                sizes="180px"
+                className="object-contain object-left group-hover:opacity-90 transition-opacity mix-blend-screen"
+              />
             </Link>
             <p className="text-slate-400 text-sm max-w-xs mb-6">
               Empowering developers to build the future. Master DSA, development, and system design with us.
