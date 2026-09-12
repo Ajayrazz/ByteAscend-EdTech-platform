@@ -3,25 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Default dark theme */
+  --background: 222 47% 5%; /* very dark blue/black #070B14 */
+  --foreground: 210 40% 98%;
+  
+  --primary: 180 100% 40%; /* Neon Cyan #00CCCC */
+  --primary-hover: 180 100% 30%;
+  --primary-foreground: 0 0% 100%;
+  
+  --surface: 222 47% 8%;
+  --border: 215 28% 17%;
+  --accent: 142 71% 45%; /* Emerald */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(180,100%,40%,0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(142,71%,45%,0.1) 0px, transparent 50%);
+  background-attachment: fixed;
+  font-family: var(--font-inter), sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400;
   }
 }
