@@ -4,8 +4,19 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Code2, Sun } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { useAuthStore } from "@/lib/store/useAuthStore";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+  const { user, token } = useAuthStore();
+  const [isMounted, setIsMounted] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -42,10 +53,26 @@ export default function Navbar() {
           <button className="text-slate-400 hover:text-white transition-colors p-2">
             <Sun size={20} />
           </button>
-          <Button variant="ghost" className="hidden md:inline-flex">
-            Log In
-          </Button>
-          <Button variant="primary">Get Started</Button>
+          
+          {isMounted ? (
+            token && user ? (
+              <Button variant="primary" onClick={() => router.push("/dashboard")}>
+                Dashboard
+              </Button>
+            ) : (
+              <>
+                <Button variant="ghost" className="hidden md:inline-flex" onClick={() => router.push("/login")}>
+                  Log In
+                </Button>
+                <Button variant="primary" onClick={() => router.push("/register")}>
+                  Get Started
+                </Button>
+              </>
+            )
+          ) : (
+            // Placeholder while mounting to avoid hydration mismatch
+            <div className="w-24 h-10"></div>
+          )}
         </div>
       </div>
     </motion.header>

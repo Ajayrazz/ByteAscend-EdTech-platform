@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Mentors() {
   return (
     <section className="py-24 border-t border-white/5 relative z-10">
@@ -8,14 +10,21 @@ export default function Mentors() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Circular Image Cutout Mockup */}
-          <div className="relative w-full max-w-md mx-auto aspect-square">
-            {/* Soft background shape */}
-            <div className="absolute inset-4 bg-slate-900 border border-white/10 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] shadow-[inset_0_0_20px_rgba(0,204,204,0.1)]" />
-            <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-transparent rounded-[30%_70%_50%_50%/50%_40%_60%_50%] mix-blend-screen" />
+          <div className="relative w-full max-w-md mx-auto aspect-square group">
+            {/* Glowing background blob */}
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-emerald-500/10 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-2xl group-hover:blur-3xl group-hover:from-cyan-500/30 transition-all duration-700" />
             
-            <div className="absolute inset-0 flex items-center justify-center text-slate-700 font-bold text-4xl opacity-50">
-               IMAGE PLACEHOLDER
+            {/* Image container with blob shape */}
+            <div className="absolute inset-4 overflow-hidden rounded-[40%_60%_70%_30%/40%_50%_60%_50%] border border-cyan-500/20 bg-slate-900 shadow-2xl transition-transform duration-700 group-hover:scale-[1.02]">
+              <Image 
+                src="/mentor.jpg" 
+                alt="Lead Instructor" 
+                fill 
+                className="object-cover object-[center_10%] transition-transform duration-700 group-hover:scale-110"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              {/* Overlay gradient to blend with the dark theme */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#070B14]/60 via-transparent to-cyan-500/10 pointer-events-none mix-blend-hard-light opacity-80" />
             </div>
           </div>
 
