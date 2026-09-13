@@ -5,6 +5,7 @@ export interface User {
   id: string;
   email: string;
   fullName: string;
+  nickname?: string | null;
   roles: { id: number; name: string }[] | string[];
 }
 

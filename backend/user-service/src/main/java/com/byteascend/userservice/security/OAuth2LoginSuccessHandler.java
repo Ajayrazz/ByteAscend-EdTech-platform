@@ -33,6 +33,7 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
     @Autowired
     private JwtUtils jwtUtils;
 
+    @org.springframework.context.annotation.Lazy
     @Autowired
     private PasswordEncoder passwordEncoder;
 

@@ -57,7 +57,8 @@ public class AuthService {
         return new JwtResponse(jwt,
                 userDetails.getId(),
                 userDetails.getUsername(),
-                userDetails.getUsername(), // fullName not in userDetails, would need to fetch or add
+                userDetails.getFullName(), 
+                userDetails.getNickname(),
                 roles);
     }
 

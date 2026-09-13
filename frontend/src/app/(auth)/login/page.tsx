@@ -37,9 +37,9 @@ export default function LoginPage() {
     setError(null);
     try {
       const response = await userApi.post("/auth/login", data);
-      const { token, id, email, fullName, roles } = response.data;
+      const { token, id, email, fullName, nickname, roles } = response.data;
       
-      login({ id, email, fullName, roles }, token);
+      login({ id, email, fullName, nickname, roles }, token);
       router.push("/dashboard");
     } catch (err) {
       if (axios.isAxiosError(err)) {

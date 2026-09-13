@@ -31,6 +31,9 @@ public class User {
     private String fullName;
 
     @Column(length = 50)
+    private String nickname;
+
+    @Column(length = 50)
     @Builder.Default
     private String provider = "LOCAL";
 

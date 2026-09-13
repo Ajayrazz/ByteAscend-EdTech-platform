@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   description: "The ultimate platform for Data Structures, Algorithms, Web Development, and Tech Interview Prep.",
 };
 
+import { InactivityTimeout } from "@/components/InactivityTimeout";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable} dark`}>
       <body className="antialiased selection:bg-cyan-500/30 selection:text-cyan-200 min-h-screen flex flex-col">
+        <InactivityTimeout />
         {children}
       </body>
     </html>
