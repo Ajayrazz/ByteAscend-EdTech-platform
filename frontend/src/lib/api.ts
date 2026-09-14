@@ -9,6 +9,10 @@ export const lmsApi = axios.create({
   baseURL: 'http://localhost:8082/api/v1',
 });
 
+export const dsaApi = axios.create({
+  baseURL: 'http://localhost:8083/api',
+});
+
 const setupInterceptors = (instance: AxiosInstance) => {
   instance.interceptors.request.use((config: InternalAxiosRequestConfig) => {
     const token = useAuthStore.getState().token;
@@ -21,3 +25,4 @@ const setupInterceptors = (instance: AxiosInstance) => {
 
 setupInterceptors(userApi);
 setupInterceptors(lmsApi);
+setupInterceptors(dsaApi);

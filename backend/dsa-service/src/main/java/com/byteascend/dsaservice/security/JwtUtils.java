@@ -1,0 +1,34 @@
+package com.byteascend.dsaservice.security;
+
+import io.jsonwebtoken.*;
+import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import java.security.Key;
+
+@Component
+public class JwtUtils {
+
+    @Value("${app.jwtSecret:ByteAscendSecretKeyWithAtLeast32CharactersLongToEnsureSecurityForHS256Algo}")
+    private String jwtSecret;
+
+    private Key key() {
+        return Keys.hmacShaKeyFor(jwtSecret.getBytes());
+    }
+
+    public String getUserIdFromJwtToken(String token) {
+        return Jwts.parserBuilder().setSigningKey(key()).build()
+                .parseClaimsJws(token).getBody().get("userId", String.class);
+    }
+
+    public boolean validateJwtToken(String authToken) {
+        try {
+            Jwts.parserBuilder().setSigningKey(key()).build().parseClaimsJws(authToken);
+            return true;
+        } catch (Exception e) {
+            System.err.println("Invalid JWT token: " + e.getMessage());
+        }
+        return false;
+    }
+}
