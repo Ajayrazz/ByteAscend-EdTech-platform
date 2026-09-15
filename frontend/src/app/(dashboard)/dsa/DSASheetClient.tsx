@@ -5,6 +5,7 @@ import DayAccordion from '@/components/dsa/DayAccordion';
 import DSAHeader from '@/components/dsa/DSAHeader';
 import { useAuthStore } from '@/lib/store/useAuthStore';
 import { dsaApi } from '@/lib/api';
+import { useStatsStore } from '@/lib/store/useStatsStore';
 
 export default function DSASheetClient({ initialDays }: { initialDays: any[] }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -12,8 +13,9 @@ export default function DSASheetClient({ initialDays }: { initialDays: any[] }) 
   const [completedProblems, setCompletedProblems] = useState<Record<string, boolean>>({});
   const [bookmarkedProblems, setBookmarkedProblems] = useState<Record<string, boolean>>({});
   
-  const { isAuthenticated } = useAuthStore();
-  
+  const isAuthenticated = useAuthStore(state => !!state.token);
+  const { fetchStats, fetchRecentActivities } = useStatsStore();
+
   // Load initial data
   useEffect(() => {
     if (isAuthenticated) {
@@ -60,6 +62,9 @@ export default function DSASheetClient({ initialDays }: { initialDays: any[] }) 
     if (isAuthenticated) {
       try {
         await dsaApi.post(`/dsa/progress/toggle-complete/${id}`);
+        // Refresh global stats and recent activities after updating progress
+        fetchStats();
+        fetchRecentActivities();
       } catch (err) {
         // Revert on failure
         setCompletedProblems(prev => ({ ...prev, [id]: !prev[id] }));

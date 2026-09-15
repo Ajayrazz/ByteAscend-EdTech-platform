@@ -28,7 +28,8 @@ public class SecurityConfig {
             .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> 
-                auth.requestMatchers("/api/dsa/sheet/**").permitAll()
+                auth.requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
+                    .requestMatchers("/api/dsa/sheet/**").permitAll()
                     .requestMatchers("/api/dsa/progress/**").authenticated()
                     .anyRequest().permitAll()
             );

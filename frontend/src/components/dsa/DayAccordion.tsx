@@ -69,7 +69,8 @@ export default function DayAccordion({
             <div className="border-t border-gray-100">
               <div className="grid grid-cols-12 gap-4 py-3 px-6 bg-gray-50 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b border-gray-100">
                 <div className="col-span-1 text-center">Status</div>
-                <div className="col-span-4">Problem</div>
+                <div className="col-span-3">Problem</div>
+                <div className="col-span-1 text-center">Platforms</div>
                 <div className="col-span-1 text-center">Article</div>
                 <div className="col-span-1 text-center">Youtube</div>
                 <div className="col-span-1 text-center">Practice</div>

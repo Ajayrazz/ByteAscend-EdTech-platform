@@ -74,8 +74,29 @@ export default function ProblemRow({ problem, isCompleted, isBookmarked, onToggl
         </div>
       </div>
 
-      <div className={`col-span-4 font-medium flex items-center ${isCompleted ? 'text-gray-400 line-through' : 'text-gray-800'}`}>
+      <div className={`col-span-3 font-medium flex items-center ${isCompleted ? 'text-gray-400 line-through' : 'text-gray-800'}`}>
         {problem.title}
+      </div>
+
+      <div className="col-span-1 flex justify-center items-center gap-3">
+        {problem?.practiceUrl && problem.practiceUrl !== '#' && (
+          <a href={problem.practiceUrl} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" title="LeetCode">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" className="w-4 h-4 opacity-70 hover:opacity-100" alt="LeetCode" />
+          </a>
+        )}
+        <a 
+          href={`https://www.geeksforgeeks.org/problems/${
+            (problem?.practiceUrl && problem.practiceUrl !== '#') 
+              ? (problem.practiceUrl.split('/problems/')[1]?.split('/')[0] || problem.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''))
+              : problem.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+          }/1`} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="hover:scale-110 transition-transform" 
+          title="GeeksforGeeks"
+        >
+          <span className="text-[11px] font-extrabold text-green-600 opacity-70 hover:opacity-100">GFG</span>
+        </a>
       </div>
 
       <div className="col-span-1 flex justify-center">

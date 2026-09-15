@@ -1,13 +1,22 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Bell, Flame, Coins, Menu } from "lucide-react";
 import { useAuthStore } from "@/lib/store/useAuthStore";
 import { useUIStore } from "@/lib/store/useUIStore";
+import { useStatsStore } from "@/lib/store/useStatsStore";
 
 export default function TopBar() {
-  const user = useAuthStore((state) => state.user);
+  const user = useAuthStore(state => state.user);
+  const isAuthenticated = useAuthStore(state => !!state.token);
   const toggleMobileMenu = useUIStore((state) => state.toggleMobileMenu);
+  const { currentStreak, totalPoints, fetchStats } = useStatsStore();
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      fetchStats();
+    }
+  }, [isAuthenticated, fetchStats]);
 
   return (
     <header className="h-16 border-b border-white/5 glass sticky top-0 z-10 flex items-center justify-between px-4 sm:px-8">
@@ -27,11 +36,11 @@ export default function TopBar() {
         <div className="hidden sm:flex items-center gap-4">
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-medium">
             <Flame className="w-4 h-4" />
-            <span>0 Day Streak</span>
+            <span>{currentStreak} Day Streak</span>
           </div>
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-sm font-medium">
             <Coins className="w-4 h-4" />
-            <span>0 Points</span>
+            <span>{totalPoints} Points</span>
           </div>
         </div>
 
