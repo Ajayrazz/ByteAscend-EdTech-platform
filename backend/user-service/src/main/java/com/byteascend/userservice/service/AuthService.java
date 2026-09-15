@@ -59,6 +59,7 @@ public class AuthService {
                 userDetails.getUsername(),
                 userDetails.getFullName(), 
                 userDetails.getNickname(),
+                userDetails.getProfilePictureUrl(),
                 roles);
     }
 

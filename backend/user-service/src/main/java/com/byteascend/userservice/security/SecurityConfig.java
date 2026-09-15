@@ -61,7 +61,8 @@ public class SecurityConfig {
             .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
             // Removed STATELESS session policy to allow OAuth2 flow state persistence
             .authorizeHttpRequests(auth -> 
-                auth.requestMatchers("/api/v1/auth/**", "/oauth2/**", "/login/**").permitAll()
+                auth.requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
+                    .requestMatchers("/api/v1/auth/**", "/oauth2/**", "/login/**", "/uploads/**").permitAll()
                     .anyRequest().authenticated()
             )
             .oauth2Login(oauth2 -> oauth2

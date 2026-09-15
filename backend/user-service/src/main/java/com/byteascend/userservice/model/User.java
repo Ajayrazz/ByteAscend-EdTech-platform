@@ -33,6 +33,24 @@ public class User {
     @Column(length = 50)
     private String nickname;
 
+    @Column(name = "profile_picture_url", length = 255)
+    private String profilePictureUrl;
+
+    @Column(length = 255)
+    private String bio;
+
+    @Column(name = "github_url", length = 255)
+    private String githubUrl;
+
+    @Column(name = "linkedin_url", length = 255)
+    private String linkedinUrl;
+
+    @Column(name = "twitter_url", length = 255)
+    private String twitterUrl;
+
+    @Column(name = "website_url", length = 255)
+    private String websiteUrl;
+
     @Column(length = 50)
     @Builder.Default
     private String provider = "LOCAL";

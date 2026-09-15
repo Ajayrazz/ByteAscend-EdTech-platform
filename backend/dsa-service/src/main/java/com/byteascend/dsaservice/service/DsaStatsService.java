@@ -40,12 +40,25 @@ public class DsaStatsService {
         List<String> submissionDates = new ArrayList<>();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
+        int dataStructuresCount = 0;
+        int algorithmsCount = 0;
+        int dpCount = 0;
+
         for (DsaUserProgress progress : userProgress) {
             DsaSheetProblem p = problemMap.get(progress.getProblemId());
             if (p != null) {
                 if ("Easy".equalsIgnoreCase(p.getDifficulty())) easyCount++;
                 else if ("Medium".equalsIgnoreCase(p.getDifficulty())) mediumCount++;
                 else if ("Hard".equalsIgnoreCase(p.getDifficulty())) hardCount++;
+
+                String title = p.getTitle().toLowerCase();
+                if (title.contains("dp") || title.contains("dynamic")) {
+                    dpCount++;
+                } else if (title.contains("sort") || title.contains("search") || title.contains("greedy") || title.contains("pointer")) {
+                    algorithmsCount++;
+                } else {
+                    dataStructuresCount++;
+                }
             }
             if (progress.getUpdatedAt() != null) {
                 LocalDate date = progress.getUpdatedAt().toLocalDate();
@@ -54,19 +67,50 @@ public class DsaStatsService {
             }
         }
 
+        int totalEasy = 0;
+        int totalMedium = 0;
+        int totalHard = 0;
+        for (DsaSheetProblem p : allProblems) {
+            if ("Easy".equalsIgnoreCase(p.getDifficulty())) totalEasy++;
+            else if ("Medium".equalsIgnoreCase(p.getDifficulty())) totalMedium++;
+            else if ("Hard".equalsIgnoreCase(p.getDifficulty())) totalHard++;
+        }
+
         int totalPoints = (easyCount * 10) + (mediumCount * 20) + (hardCount * 30);
         int currentStreak = calculateStreak(completedDates);
         int globalRank = calculateGlobalRank(totalPoints);
 
         Map<String, Object> stats = new HashMap<>();
         stats.put("totalSolved", userProgress.size());
+        stats.put("totalProblems", allProblems.size());
         stats.put("easySolved", easyCount);
         stats.put("mediumSolved", mediumCount);
         stats.put("hardSolved", hardCount);
+        stats.put("totalEasy", totalEasy);
+        stats.put("totalMedium", totalMedium);
+        stats.put("totalHard", totalHard);
         stats.put("totalPoints", totalPoints);
         stats.put("currentStreak", currentStreak);
         stats.put("globalRank", globalRank);
         stats.put("submissionDates", submissionDates);
+
+        // Community Stats (Mocked as real features are not built yet, but wired to 0)
+        Map<String, Integer> communityStats = new HashMap<>();
+        communityStats.put("solutions", 0);
+        communityStats.put("discussions", 0);
+        communityStats.put("submissions", userProgress.size()); // Use total solved as proxy for submissions
+        communityStats.put("reputation", 0);
+        stats.put("communityStats", communityStats);
+
+        // Skills (Derived from solved problem titles)
+        Map<String, Integer> skills = new HashMap<>();
+        skills.put("Data Structures", dataStructuresCount);
+        skills.put("Algorithms", algorithmsCount);
+        skills.put("Dynamic Programming", dpCount);
+        stats.put("skills", skills);
+
+        // Contest Ranking (Empty for now)
+        stats.put("contestRanking", new ArrayList<>());
 
         return stats;
     }

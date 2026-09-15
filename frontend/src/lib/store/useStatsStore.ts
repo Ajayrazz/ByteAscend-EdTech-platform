@@ -17,13 +17,25 @@ export interface LeaderboardUser {
 
 interface StatsState {
   totalSolved: number;
+  totalProblems: number;
   easySolved: number;
   mediumSolved: number;
   hardSolved: number;
+  totalEasy: number;
+  totalMedium: number;
+  totalHard: number;
   totalPoints: number;
   currentStreak: number;
   globalRank: number;
   submissionDates: string[];
+  communityStats: {
+    solutions: number;
+    discussions: number;
+    submissions: number;
+    reputation: number;
+  } | null;
+  skills: Record<string, number> | null;
+  contestRanking: any[] | null;
   recentActivities: RecentActivity[];
   leaderboard: LeaderboardUser[];
   isLoading: boolean;
@@ -34,6 +46,7 @@ interface StatsState {
 
 export const useStatsStore = create<StatsState>((set) => ({
   totalSolved: 0,
+  totalProblems: 0,
   easySolved: 0,
   mediumSolved: 0,
   hardSolved: 0,
@@ -41,6 +54,9 @@ export const useStatsStore = create<StatsState>((set) => ({
   currentStreak: 0,
   globalRank: 0,
   submissionDates: [],
+  communityStats: null,
+  skills: null,
+  contestRanking: null,
   recentActivities: [],
   leaderboard: [],
   isLoading: false,
@@ -49,15 +65,23 @@ export const useStatsStore = create<StatsState>((set) => ({
     set({ isLoading: true });
     try {
       const response = await dsaApi.get('/dsa/stats/me');
+      console.log('DSA STATS ME RESPONSE:', response.data);
       set({
         totalSolved: response.data.totalSolved || 0,
+        totalProblems: response.data.totalProblems || 0,
         easySolved: response.data.easySolved || 0,
         mediumSolved: response.data.mediumSolved || 0,
         hardSolved: response.data.hardSolved || 0,
+        totalEasy: response.data.totalEasy || 0,
+        totalMedium: response.data.totalMedium || 0,
+        totalHard: response.data.totalHard || 0,
         totalPoints: response.data.totalPoints || 0,
         currentStreak: response.data.currentStreak || 0,
         globalRank: response.data.globalRank || 0,
         submissionDates: response.data.submissionDates || [],
+        communityStats: response.data.communityStats || null,
+        skills: response.data.skills || null,
+        contestRanking: response.data.contestRanking || null,
         isLoading: false,
       });
     } catch (error) {

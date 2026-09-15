@@ -1,0 +1,6 @@
+ALTER TABLE users 
+ADD COLUMN bio VARCHAR(255),
+ADD COLUMN github_url VARCHAR(255),
+ADD COLUMN linkedin_url VARCHAR(255),
+ADD COLUMN twitter_url VARCHAR(255),
+ADD COLUMN website_url VARCHAR(255);

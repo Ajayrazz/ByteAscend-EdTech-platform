@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import { Bell, Flame, Coins, Menu } from "lucide-react";
+import Link from 'next/link';
 import { useAuthStore } from "@/lib/store/useAuthStore";
 import { useUIStore } from "@/lib/store/useUIStore";
 import { useStatsStore } from "@/lib/store/useStatsStore";
@@ -50,11 +51,16 @@ export default function TopBar() {
         </button>
 
         <div className="flex items-center gap-3 pl-4 border-l border-white/10">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-cyan-500 to-emerald-500 p-[2px]">
-            <div className="w-full h-full rounded-full bg-slate-900 border border-white/10 flex items-center justify-center text-sm font-bold text-white uppercase">
-              {(user?.nickname || user?.fullName || "U").charAt(0)}
+          <Link href="/profile" className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
+            <div className="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold border border-indigo-500/30 overflow-hidden">
+              {user?.profilePictureUrl ? (
+                <img src={user.profilePictureUrl} alt="Avatar" className="w-full h-full object-cover" />
+              ) : (
+                (user?.fullName || user?.nickname || "U").substring(0, 2).toUpperCase()
+              )}
             </div>
-          </div>
+            <span className="font-medium hidden sm:block">{user?.fullName?.split(" ")[0] || user?.nickname || "User"}</span>
+          </Link>
         </div>
       </div>
     </header>
