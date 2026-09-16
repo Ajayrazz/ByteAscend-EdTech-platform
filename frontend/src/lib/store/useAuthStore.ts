@@ -19,7 +19,7 @@ export interface User {
 interface AuthState {
   token: string | null;
   user: User | null;
-  setAuth: (token: string, user: User) => void;
+  login: (user: User, token: string) => void;
   logout: () => void;
   updateProfilePicture: (url: string) => void;
   updateProfile: (data: Partial<User>) => Promise<void>;
@@ -30,7 +30,7 @@ export const useAuthStore = create<AuthState>()(
     (set) => ({
       token: null,
       user: null,
-      setAuth: (token, user) => set({ token, user }),
+      login: (user, token) => set({ token, user }),
       logout: () => set({ token: null, user: null }),
       updateProfilePicture: (url) => set((state) => ({
         user: state.user ? { ...state.user, profilePictureUrl: url } : null

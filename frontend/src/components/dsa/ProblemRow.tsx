@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import { FileText, PlayCircle, Code2, Bookmark, Check } from 'lucide-react';
-import { FaGoogle, FaAmazon, FaApple, FaMicrosoft, FaFacebook } from 'react-icons/fa';
-import { SiFlipkart, SiZomato, SiSwiggy, SiPaytm, SiRazorpay, SiPhonepe, SiUber } from 'react-icons/si';
+import { FaAmazon, FaApple, FaFacebook, FaGoogle, FaMicrosoft, FaPaypal, FaSpotify, FaTwitter, FaAtlassian, FaSalesforce } from 'react-icons/fa';
+import { SiAdobe, SiCisco, SiGoldmansachs, SiIntel, SiIntuit, SiOracle, SiSamsung, SiVisa, SiWalmart, SiYahoo } from 'react-icons/si';
+import { MdBusinessCenter } from 'react-icons/md';
 
 interface Problem {
   id: string;
@@ -32,14 +33,8 @@ const CompanyLogo = ({ name }: { name: string }) => {
   if (normalized.includes('apple')) return <FaApple {...iconProps} className="w-4 h-4 text-gray-800" />;
   if (normalized.includes('microsoft')) return <FaMicrosoft {...iconProps} className="w-4 h-4 text-blue-400" />;
   if (normalized.includes('meta') || normalized.includes('facebook')) return <FaFacebook {...iconProps} className="w-4 h-4 text-blue-600" />;
-  if (normalized.includes('flipkart')) return <SiFlipkart {...iconProps} className="w-4 h-4 text-yellow-500" />;
-  if (normalized.includes('zomato')) return <SiZomato {...iconProps} className="w-4 h-4 text-red-500" />;
-  if (normalized.includes('swiggy')) return <SiSwiggy {...iconProps} className="w-4 h-4 text-orange-600" />;
-  if (normalized.includes('paytm')) return <SiPaytm {...iconProps} className="w-4 h-4 text-blue-400" />;
-  if (normalized.includes('razorpay')) return <SiRazorpay {...iconProps} className="w-4 h-4 text-blue-500" />;
-  if (normalized.includes('phonepe')) return <SiPhonepe {...iconProps} className="w-4 h-4 text-purple-500" />;
-  if (normalized.includes('uber')) return <SiUber {...iconProps} className="w-4 h-4 text-black" />;
   
+
   // Fallback for others (Cred, Meesho, Zerodha, Unacademy, etc)
   const colors = ['bg-red-100 text-red-600', 'bg-blue-100 text-blue-600', 'bg-green-100 text-green-600', 'bg-purple-100 text-purple-600', 'bg-yellow-100 text-yellow-600'];
   const colorIndex = name.length % colors.length;
