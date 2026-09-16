@@ -28,6 +28,17 @@ services:
     restart: unless-stopped
 
   # ----------------------------------------------------
+  # RabbitMQ Message Broker
+  # ----------------------------------------------------
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: byteascend-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    restart: unless-stopped
+
+  # ----------------------------------------------------
   # Judge0 Ecosystem (Sandbox execution)
   # ----------------------------------------------------
   server:

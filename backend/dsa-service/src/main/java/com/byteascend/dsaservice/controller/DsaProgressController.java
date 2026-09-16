@@ -31,6 +31,9 @@ public class DsaProgressController {
         return ResponseEntity.ok(progressList);
     }
 
+    @Autowired
+    private org.springframework.amqp.rabbit.core.RabbitTemplate rabbitTemplate;
+
     @PostMapping("/toggle-complete/{problemId}")
     public ResponseEntity<?> toggleComplete(@PathVariable String problemId) {
         UUID userId = getCurrentUserId();
@@ -42,8 +45,16 @@ public class DsaProgressController {
             progress.setProblemId(problemId);
         }
         
-        progress.setCompleted(!progress.isCompleted());
+        boolean wasCompleted = progress.isCompleted();
+        progress.setCompleted(!wasCompleted);
         progressRepository.save(progress);
+        
+        // Publish event if the problem was just marked as completed
+        if (!wasCompleted) {
+            com.byteascend.dsaservice.event.ProblemSolvedEvent event = 
+                new com.byteascend.dsaservice.event.ProblemSolvedEvent(userId, problemId, System.currentTimeMillis());
+            rabbitTemplate.convertAndSend("byteascend.dsa.exchange", "problem.solved", event);
+        }
         
         return ResponseEntity.ok(Map.of("message", "Toggled completion status", "isCompleted", progress.isCompleted()));
     }

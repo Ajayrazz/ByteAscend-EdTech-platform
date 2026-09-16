@@ -25,6 +25,31 @@ public class UserController {
         return ResponseEntity.ok(user);
     }
 
+    @Autowired
+    private com.byteascend.userservice.repository.UserBadgeRepository userBadgeRepository;
+
+    @GetMapping("/badges")
+    public ResponseEntity<?> getUserBadges() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
+        
+        java.util.List<com.byteascend.userservice.model.UserBadge> userBadges = 
+            userBadgeRepository.findByUserId(userDetails.getId());
+        
+        java.util.List<java.util.Map<String, Object>> badges = userBadges.stream().map(ub -> {
+            com.byteascend.userservice.model.Badge b = ub.getBadge();
+            java.util.Map<String, Object> map = new java.util.HashMap<>();
+            map.put("id", b.getId());
+            map.put("name", b.getName());
+            map.put("description", b.getDescription());
+            map.put("iconUrl", b.getIconUrl());
+            map.put("earnedAt", ub.getEarnedAt());
+            return map;
+        }).collect(java.util.stream.Collectors.toList());
+        
+        return ResponseEntity.ok(badges);
+    }
+
     @PutMapping("/profile")
     public ResponseEntity<User> updateProfile(@RequestBody com.byteascend.userservice.dto.UserProfileUpdateRequest request) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

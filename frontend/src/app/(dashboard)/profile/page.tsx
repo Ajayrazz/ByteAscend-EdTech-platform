@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useAuthStore } from "@/lib/store/useAuthStore";
 import { useStatsStore } from "@/lib/store/useStatsStore";
 import { userApi } from "@/lib/api";
@@ -46,7 +46,21 @@ export default function ProfilePage() {
   const stats = useStatsStore();
   const [uploading, setUploading] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const [badges, setBadges] = useState<any[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    async function fetchBadges() {
+      if (!user) return;
+      try {
+        const res = await userApi.get('/users/badges');
+        setBadges(res.data);
+      } catch (err) {
+        console.error("Failed to fetch badges", err);
+      }
+    }
+    fetchBadges();
+  }, [user]);
 
   const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -92,7 +106,12 @@ export default function ProfilePage() {
         {/* LEFT COLUMN */}
         <div className="space-y-6">
           {/* Profile Card */}
-          <div className="bg-[#1C1C1E] border border-white/5 rounded-2xl p-6">
+          <motion.div 
+            whileHover={{ scale: 1.02, y: -5, rotateX: 2, rotateY: -2, boxShadow: "0 20px 40px -15px rgba(99, 102, 241, 0.2)" }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 relative overflow-hidden group"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-indigo-500/20 transition-colors" />
             <div className="flex items-start justify-between">
               <div className="flex items-center gap-4 relative group">
                 <div 
@@ -167,13 +186,18 @@ export default function ProfilePage() {
               )}
             </div>
             
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-medium border border-indigo-500/20">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-medium border border-indigo-500/20 shadow-[0_0_10px_rgba(99,102,241,0.2)]">
               {rank}
             </div>
-          </div>
+          </motion.div>
 
           {/* Community Stats */}
-          <div className="bg-[#1C1C1E] border border-white/5 rounded-2xl p-6">
+          <motion.div 
+            whileHover={{ scale: 1.02, y: -5, rotateX: 2, rotateY: -2, boxShadow: "0 20px 40px -15px rgba(56, 189, 248, 0.2)" }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 relative overflow-hidden group"
+          >
+            <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-sky-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-sky-500/20 transition-colors" />
             <h3 className="text-white font-semibold mb-1">Community Stats</h3>
             <p className="text-slate-400 text-xs mb-6">Your activity and impact within the community.</p>
             
@@ -207,10 +231,15 @@ export default function ProfilePage() {
                 <span className="text-white font-medium">{communityStats.reputation}</span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Skills */}
-          <div className="bg-[#1C1C1E] border border-white/5 rounded-2xl p-6">
+          <motion.div 
+            whileHover={{ scale: 1.02, y: -5, rotateX: 2, rotateY: -2, boxShadow: "0 20px 40px -15px rgba(245, 158, 11, 0.2)" }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 relative overflow-hidden group"
+          >
+            <div className="absolute top-10 left-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-amber-500/20 transition-colors" />
             <h3 className="text-white font-semibold mb-1">Skills</h3>
             <p className="text-slate-400 text-xs mb-6">Core technologies used to solve problems efficiently.</p>
             
@@ -222,35 +251,63 @@ export default function ProfilePage() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
         
         {/* RIGHT COLUMN */}
         <div className="lg:col-span-2 space-y-6">
           
           {/* Achievements */}
-          <div className="bg-[#1C1C1E] border border-white/5 rounded-2xl p-6">
+          <motion.div 
+            whileHover={{ scale: 1.01, y: -5, boxShadow: "0 20px 40px -15px rgba(168, 85, 247, 0.2)" }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 relative overflow-hidden group"
+          >
+            <div className="absolute -top-20 -right-20 w-64 h-64 bg-purple-500/10 rounded-full blur-[60px] pointer-events-none group-hover:bg-purple-500/20 transition-colors" />
             <div className="flex justify-between items-start mb-6">
               <div>
                 <h3 className="text-white font-semibold mb-1">Achievements</h3>
                 <p className="text-slate-400 text-xs">Milestones earned through consistent practice and performance.</p>
               </div>
-              <div className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-medium border border-purple-500/20 flex items-center gap-1.5">
-                <span>🏆</span> Total Trophies: 0
+              <div className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-medium border border-purple-500/20 flex items-center gap-1.5 shadow-[0_0_10px_rgba(168,85,247,0.2)]">
+                <span>🏆</span> Total Trophies: {badges.length}
               </div>
             </div>
             
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="aspect-[4/3] bg-white/5 rounded-xl border border-white/5 flex items-center justify-center">
-                  <FiShield className="text-2xl text-slate-500" />
+              {badges.length > 0 ? badges.map((badge) => (
+                <div 
+                  key={badge.id} 
+                  title={badge.description}
+                  className="aspect-[4/3] bg-gradient-to-br from-white/5 to-white/0 rounded-xl border border-white/10 flex flex-col items-center justify-center p-2 group hover:bg-white/10 hover:border-purple-500/30 transition-all cursor-pointer shadow-lg relative overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                  <img 
+                    src={badge.iconUrl} 
+                    alt={badge.name} 
+                    className="w-16 h-16 object-cover rounded shadow-[0_0_15px_rgba(0,0,0,0.5)] mb-2 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300" 
+                  />
+                  <span className="text-white text-[10px] sm:text-xs font-bold tracking-wide uppercase text-center w-full truncate relative z-10 drop-shadow-md">
+                    {badge.name}
+                  </span>
                 </div>
-              ))}
+              )) : (
+                [1, 2, 3, 4].map((i) => (
+                  <div key={i} className="aspect-[4/3] bg-white/5 rounded-xl border border-white/5 flex items-center justify-center">
+                    <FiShield className="text-2xl text-slate-500 opacity-20" />
+                  </div>
+                ))
+              )}
             </div>
-          </div>
+          </motion.div>
 
           {/* Contest Ranking */}
-          <div className="bg-[#1C1C1E] border border-white/5 rounded-2xl p-6">
+          <motion.div 
+            whileHover={{ scale: 1.01, y: -5, boxShadow: "0 20px 40px -15px rgba(236, 72, 153, 0.2)" }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 relative overflow-hidden group"
+          >
+            <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-pink-500/10 rounded-full blur-[60px] pointer-events-none group-hover:bg-pink-500/20 transition-colors" />
             <h3 className="text-white font-semibold mb-1">Contest Ranking</h3>
             <p className="text-slate-400 text-xs mb-6">Your competitive programming performance over time.</p>
             
@@ -261,10 +318,15 @@ export default function ProfilePage() {
                 <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Problem Stats */}
-          <div className="bg-[#1C1C1E] border border-white/5 rounded-2xl p-6">
+          <motion.div 
+            whileHover={{ scale: 1.01, y: -5, boxShadow: "0 20px 40px -15px rgba(16, 185, 129, 0.2)" }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 relative overflow-hidden group"
+          >
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-emerald-500/20 transition-colors" />
             <h3 className="text-white font-semibold mb-1">Problem Stats</h3>
             <p className="text-slate-400 text-xs mb-8">Breakdown of solved problems by difficulty level.</p>
             
@@ -310,10 +372,15 @@ export default function ProfilePage() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Total Submissions (Heatmap) */}
-          <div className="bg-[#1C1C1E] border border-white/5 rounded-2xl p-6">
+          <motion.div 
+            whileHover={{ scale: 1.01, y: -5, boxShadow: "0 20px 40px -15px rgba(99, 102, 241, 0.2)" }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 relative overflow-hidden group"
+          >
+            <div className="absolute -bottom-20 right-20 w-64 h-64 bg-indigo-500/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-indigo-500/20 transition-colors" />
             <div className="flex justify-between items-end mb-6">
               <div>
                 <h3 className="text-white font-semibold mb-1">Total Submissions</h3>
@@ -334,7 +401,7 @@ export default function ProfilePage() {
             <div className="w-full overflow-x-auto pb-2">
               <ActivityHeatmap />
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>
