@@ -16,8 +16,9 @@ export const dsaApi = axios.create({
 const setupInterceptors = (instance: AxiosInstance) => {
   instance.interceptors.request.use((config: InternalAxiosRequestConfig) => {
     const token = useAuthStore.getState().token;
+    console.log("Interceptor sending token:", token ? token.substring(0, 10) + '...' : 'NO TOKEN');
     if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+      config.headers.set('Authorization', `Bearer ${token}`);
     }
     return config;
   });
