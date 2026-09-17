@@ -19,6 +19,9 @@ public class DsaProgressController {
     @Autowired
     private DsaUserProgressRepository progressRepository;
 
+    @Autowired
+    private com.byteascend.dsaservice.service.PotdService potdService;
+
     private UUID getCurrentUserId() {
         String userIdStr = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return UUID.fromString(userIdStr);
@@ -51,8 +54,13 @@ public class DsaProgressController {
         
         // Publish event if the problem was just marked as completed
         if (!wasCompleted) {
+            boolean isPotd = false;
+            Map<String, Object> potd = potdService.getProblemOfTheDay();
+            if (potd != null && problemId.equals(potd.get("id"))) {
+                isPotd = true;
+            }
             com.byteascend.dsaservice.event.ProblemSolvedEvent event = 
-                new com.byteascend.dsaservice.event.ProblemSolvedEvent(userId, problemId, System.currentTimeMillis());
+                new com.byteascend.dsaservice.event.ProblemSolvedEvent(userId, problemId, System.currentTimeMillis(), isPotd);
             rabbitTemplate.convertAndSend("byteascend.dsa.exchange", "problem.solved", event);
         }
         

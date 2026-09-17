@@ -30,24 +30,27 @@ public class ProblemSolvedConsumer {
     @Transactional
     public void handleProblemSolvedEvent(ProblemSolvedEvent event) {
         System.out.println("Received ProblemSolvedEvent for User: " + event.getUserId());
-        
+
         Optional<User> userOpt = userRepository.findById(event.getUserId());
-        if (userOpt.isEmpty()) return;
-        
+        if (userOpt.isEmpty())
+            return;
+
         User user = userOpt.get();
-        
-        // 1. Update score (give 10 points for a solved problem)
-        user.setTotalScore(user.getTotalScore() + 10);
-        
+
+        // 1. Update score
+        int points = event.isPotd() ? 50 : 10;
+        user.setTotalScore(user.getTotalScore() + points);
+        System.out.println("Awarded " + points + " points. Is POTD: " + event.isPotd());
+
         // 2. Evaluate Badges
         // Badge 1: First Blood
         evaluateBadge(user, "First Blood");
-        
+
         // Badge 2: Array Master (simplified condition: if score >= 100)
         if (user.getTotalScore() >= 100) {
             evaluateBadge(user, "Array Master");
         }
-        
+
         userRepository.save(user);
     }
 

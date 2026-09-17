@@ -1,0 +1,2136 @@
+[
+  {
+    "id": "day-1",
+    "title": "Day 1 : Array (Part 1)",
+    "problems": [
+      {
+        "id": "p-1-1",
+        "title": "Majority Element",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/majority-element/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Google"
+      },
+      {
+        "id": "p-1-2",
+        "title": "Repeat & missing number",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/repeat-missing-number/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Oracle"
+      },
+      {
+        "id": "p-1-3",
+        "title": "Merge 2 sorted array without extra space",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/merge-2-sorted-array-without-extra-space/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Google,Adobe"
+      },
+      {
+        "id": "p-1-4",
+        "title": "Single Number",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/single-number/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Adobe"
+      },
+      {
+        "id": "p-1-5",
+        "title": "Stock Buy & Sell",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/stock-buy-sell/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Microsoft"
+      },
+      {
+        "id": "p-1-6",
+        "title": "Pow (x^n)",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/pow-xn/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Visa"
+      }
+    ]
+  },
+  {
+    "id": "day-2",
+    "title": "Day 2 : Array (Part 2)",
+    "problems": [
+      {
+        "id": "p-2-1",
+        "title": "Kadane's Algorithm",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/kadanes-algorithm/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Visa"
+      },
+      {
+        "id": "p-2-2",
+        "title": "Container with most water",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/container-with-most-water/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Goldman Sachs"
+      },
+      {
+        "id": "p-2-3",
+        "title": "Sort array of 0s, 1s & 2s",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/sort-array-of-0s-1s-2s/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Goldman Sachs"
+      },
+      {
+        "id": "p-2-4",
+        "title": "3Sum",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/3sum/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Google"
+      },
+      {
+        "id": "p-2-5",
+        "title": "4Sum",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/4sum/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Adobe"
+      },
+      {
+        "id": "p-2-6",
+        "title": "Search in 2d matrix",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/search-in-2d-matrix/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Amazon"
+      }
+    ]
+  },
+  {
+    "id": "day-3",
+    "title": "Day 3 : Array (Part 3)",
+    "problems": [
+      {
+        "id": "p-3-1",
+        "title": "Next permutation",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/next-permutation/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Visa"
+      },
+      {
+        "id": "p-3-2",
+        "title": "Merge overlapping intervals",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/merge-overlapping-intervals/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Google"
+      },
+      {
+        "id": "p-3-3",
+        "title": "Longest substring without repeating characters",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Goldman Sachs"
+      },
+      {
+        "id": "p-3-4",
+        "title": "Set matrix zeroes",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/set-matrix-zeroes/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Meta"
+      },
+      {
+        "id": "p-3-5",
+        "title": "Word search",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/word-search/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Google,Amazon"
+      },
+      {
+        "id": "p-3-6",
+        "title": "Product of array except self",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/product-of-array-except-self/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Oracle"
+      }
+    ]
+  },
+  {
+    "id": "day-4",
+    "title": "Day 4 : Array (Part 4)",
+    "problems": [
+      {
+        "id": "p-4-1",
+        "title": "Subarray sum equals k",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/subarray-sum-equals-k/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Adobe"
+      },
+      {
+        "id": "p-4-2",
+        "title": "Find Duplicate",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/find-duplicate/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Visa"
+      },
+      {
+        "id": "p-4-3",
+        "title": "Count Inversions",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/count-inversions/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,LinkedIn"
+      },
+      {
+        "id": "p-4-4",
+        "title": "Spiral Matrix",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/spiral-matrix/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,LinkedIn"
+      },
+      {
+        "id": "p-4-5",
+        "title": "Search in Sorted matrix II",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/search-in-sorted-matrix-ii/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Visa"
+      }
+    ]
+  },
+  {
+    "id": "day-5",
+    "title": "Day 5 : Array (Part 5)",
+    "problems": [
+      {
+        "id": "p-5-1",
+        "title": "Trapping Rainwater",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/trapping-rainwater/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Oracle"
+      },
+      {
+        "id": "p-5-2",
+        "title": "Sliding Window Maximum",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/sliding-window-maximum/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Google"
+      },
+      {
+        "id": "p-5-3",
+        "title": "Largest Rectangle in a Histogram",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/largest-rectangle-in-a-histogram/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Microsoft"
+      },
+      {
+        "id": "p-5-4",
+        "title": "Reverse Pairs",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/reverse-pairs/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Adobe"
+      }
+    ]
+  },
+  {
+    "id": "day-6",
+    "title": "Day 6 : Strings (Part 1)",
+    "problems": [
+      {
+        "id": "p-6-1",
+        "title": "Valid Palindrome",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/valid-palindrome/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Oracle"
+      },
+      {
+        "id": "p-6-2",
+        "title": "Valid Anagram",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/valid-anagram/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Oracle"
+      },
+      {
+        "id": "p-6-3",
+        "title": "Reverse Words in String",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/reverse-words-in-string/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Apple"
+      },
+      {
+        "id": "p-6-4",
+        "title": "Remove All Occurrences",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/remove-all-occurrences/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Oracle"
+      },
+      {
+        "id": "p-6-5",
+        "title": "Permutation in String",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/permutation-in-string/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Goldman Sachs"
+      },
+      {
+        "id": "p-6-6",
+        "title": "String Compression",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/string-compression/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Adobe"
+      }
+    ]
+  },
+  {
+    "id": "day-7",
+    "title": "Day 7 : Strings (Part 2)",
+    "problems": [
+      {
+        "id": "p-7-1",
+        "title": "Longest Common Prefix",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/longest-common-prefix/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Adobe"
+      },
+      {
+        "id": "p-7-2",
+        "title": "Group Anagrams",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/group-anagrams/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Microsoft"
+      },
+      {
+        "id": "p-7-3",
+        "title": "Minimum Window Substring",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/minimum-window-substring/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Microsoft"
+      },
+      {
+        "id": "p-7-4",
+        "title": "KMP Algorithm",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/kmp-algorithm/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Oracle"
+      },
+      {
+        "id": "p-7-5",
+        "title": "Robin-Karp Algorithm",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/robin-karp-algorithm/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Apple"
+      },
+      {
+        "id": "p-7-6",
+        "title": "Reverse Words in String",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/reverse-words-in-string/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Oracle"
+      }
+    ]
+  },
+  {
+    "id": "day-8",
+    "title": "Day 8 : Binary Search",
+    "problems": [
+      {
+        "id": "p-8-1",
+        "title": "Peak Index in Mountain Array",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/peak-index-in-mountain-array/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Google"
+      },
+      {
+        "id": "p-8-2",
+        "title": "Search in Rotated Sorted Array",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Google,Goldman Sachs"
+      },
+      {
+        "id": "p-8-3",
+        "title": "Single Element in Sorted Array",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/single-element-in-sorted-array/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Apple"
+      },
+      {
+        "id": "p-8-4",
+        "title": "Aggressive Cows",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/aggressive-cows/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Goldman Sachs"
+      },
+      {
+        "id": "p-8-5",
+        "title": "Allocate Minimum Pages",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/allocate-minimum-pages/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,LinkedIn"
+      },
+      {
+        "id": "p-8-6",
+        "title": "Painter's Partition",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/painters-partition/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Google,Meta"
+      },
+      {
+        "id": "p-8-7",
+        "title": "Median of 2 Sorted Arrays",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/median-of-2-sorted-arrays/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Google"
+      }
+    ]
+  },
+  {
+    "id": "day-9",
+    "title": "Day 9 : Recursion & Backtracking",
+    "problems": [
+      {
+        "id": "p-9-1",
+        "title": "Combination Sum I",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/combination-sum-i/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Microsoft"
+      },
+      {
+        "id": "p-9-2",
+        "title": "Combination Sum II",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/combination-sum-ii/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Meta"
+      },
+      {
+        "id": "p-9-3",
+        "title": "Palindrome Partitioning",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/palindrome-partitioning/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Amazon"
+      },
+      {
+        "id": "p-9-4",
+        "title": "N Queens",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/n-queens/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Oracle"
+      },
+      {
+        "id": "p-9-5",
+        "title": "Sudoku Solver",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/sudoku-solver/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Oracle"
+      },
+      {
+        "id": "p-9-6",
+        "title": "M-Coloring Problem",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/m-coloring-problem/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,LinkedIn"
+      }
+    ]
+  },
+  {
+    "id": "day-10",
+    "title": "Day 10 : Recursion & Backtracking",
+    "problems": [
+      {
+        "id": "p-10-1",
+        "title": "Knights Tour",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/knights-tour/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Google,Oracle"
+      },
+      {
+        "id": "p-10-2",
+        "title": "Subsets II",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/subsets-ii/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Meta"
+      },
+      {
+        "id": "p-10-3",
+        "title": "Merge Sort",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/merge-sort/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Goldman Sachs"
+      },
+      {
+        "id": "p-10-4",
+        "title": "Rat in a Maze",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/rat-in-a-maze/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Goldman Sachs"
+      },
+      {
+        "id": "p-10-5",
+        "title": "Count Inversions",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/count-inversions/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Meta"
+      }
+    ]
+  },
+  {
+    "id": "day-11",
+    "title": "Day 11 : Linked List (Part 1)",
+    "problems": [
+      {
+        "id": "p-11-1",
+        "title": "Middle of a Linked List",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/middle-of-a-linked-list/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Adobe"
+      },
+      {
+        "id": "p-11-2",
+        "title": "Reverse Linked List",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/reverse-linked-list/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,LinkedIn"
+      },
+      {
+        "id": "p-11-3",
+        "title": "Remove Cycle in a LL",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/remove-cycle-in-a-ll/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Adobe"
+      },
+      {
+        "id": "p-11-4",
+        "title": "Detect Cycle in a LL",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/detect-cycle-in-a-ll/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Google"
+      },
+      {
+        "id": "p-11-5",
+        "title": "Merge 2 Sorted LL",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/merge-2-sorted-ll/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Visa"
+      },
+      {
+        "id": "p-11-6",
+        "title": "Flatten a Linked List",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/flatten-a-linked-list/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Apple"
+      }
+    ]
+  },
+  {
+    "id": "day-12",
+    "title": "Day 12 : Linked List (Part 2)",
+    "problems": [
+      {
+        "id": "p-12-1",
+        "title": "Is LL a Palindrome or Not",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/is-ll-a-palindrome-or-not/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Microsoft"
+      },
+      {
+        "id": "p-12-2",
+        "title": "Clone List with Random Pointers",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/clone-list-with-random-pointers/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Meta"
+      },
+      {
+        "id": "p-12-3",
+        "title": "Reverse Linked List II",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/reverse-linked-list-ii/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,LinkedIn"
+      },
+      {
+        "id": "p-12-4",
+        "title": "Add 2 Numbers",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/add-2-numbers/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Adobe"
+      },
+      {
+        "id": "p-12-5",
+        "title": "Reverse Nodes in K Groups",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/reverse-nodes-in-k-groups/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Google"
+      },
+      {
+        "id": "p-12-6",
+        "title": "Rotate a Linked List",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/rotate-a-linked-list/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Amazon"
+      }
+    ]
+  },
+  {
+    "id": "day-13",
+    "title": "Day 13 : Stacks & Queues (Part 1)",
+    "problems": [
+      {
+        "id": "p-13-1",
+        "title": "Implement Stack using Queue",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/implement-stack-using-queue/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Google,Amazon"
+      },
+      {
+        "id": "p-13-2",
+        "title": "Next Greater Element I",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/next-greater-element-i/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Goldman Sachs"
+      },
+      {
+        "id": "p-13-3",
+        "title": "Implement Queue using Stack",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/implement-queue-using-stack/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Google,Goldman Sachs"
+      },
+      {
+        "id": "p-13-4",
+        "title": "Valid Parentheses",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/valid-parentheses/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Apple"
+      },
+      {
+        "id": "p-13-5",
+        "title": "1st Non Repeating in Stream",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/1st-non-repeating-in-stream/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Google"
+      },
+      {
+        "id": "p-13-6",
+        "title": "Reverse 1st K Elements of Queue",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/reverse-1st-k-elements-of-queue/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Goldman Sachs"
+      }
+    ]
+  },
+  {
+    "id": "day-14",
+    "title": "Day 14 : Stacks & Queues (Part 2)",
+    "problems": [
+      {
+        "id": "p-14-1",
+        "title": "Time needed to Buy Tickets",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/time-needed-to-buy-tickets/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Oracle"
+      },
+      {
+        "id": "p-14-2",
+        "title": "LRU Cache",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/lru-cache/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Google"
+      },
+      {
+        "id": "p-14-3",
+        "title": "Get Min Element from Stack",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/get-min-element-from-stack/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,LinkedIn"
+      },
+      {
+        "id": "p-14-4",
+        "title": "Next Greater Element II",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/next-greater-element-ii/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Google,Adobe"
+      },
+      {
+        "id": "p-14-5",
+        "title": "Celebrity Problem",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/celebrity-problem/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Amazon"
+      }
+    ]
+  },
+  {
+    "id": "day-15",
+    "title": "Day 15 : Stacks & Queues (Part 3)",
+    "problems": [
+      {
+        "id": "p-15-1",
+        "title": "Rotten Oranges",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/rotten-oranges/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Apple"
+      },
+      {
+        "id": "p-15-2",
+        "title": "Sort a Stack",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/sort-a-stack/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Apple,LinkedIn"
+      },
+      {
+        "id": "p-15-3",
+        "title": "Stock Span",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/stock-span/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Oracle"
+      },
+      {
+        "id": "p-15-4",
+        "title": "Circular Tour / Gas Station",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/circular-tour-gas-station/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Visa"
+      },
+      {
+        "id": "p-15-5",
+        "title": "Max Area in Histogram",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/max-area-in-histogram/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Apple"
+      }
+    ]
+  },
+  {
+    "id": "day-16",
+    "title": "Day 16 : Binary Trees (Part 1)",
+    "problems": [
+      {
+        "id": "p-16-1",
+        "title": "Preorder Traversal",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/preorder-traversal/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,LinkedIn"
+      },
+      {
+        "id": "p-16-2",
+        "title": "Level Order Traversal",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/level-order-traversal/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Oracle"
+      },
+      {
+        "id": "p-16-3",
+        "title": "Inorder Traversal",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/inorder-traversal/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Amazon"
+      },
+      {
+        "id": "p-16-4",
+        "title": "Minimum Distance between Nodes",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/minimum-distance-between-nodes/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Adobe"
+      },
+      {
+        "id": "p-16-5",
+        "title": "Symmetric Tree",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/symmetric-tree/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Goldman Sachs"
+      },
+      {
+        "id": "p-16-6",
+        "title": "Postorder Traversal",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/postorder-traversal/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Amazon"
+      }
+    ]
+  },
+  {
+    "id": "day-17",
+    "title": "Day 17 : Binary Trees (Part 2)",
+    "problems": [
+      {
+        "id": "p-17-1",
+        "title": "Morris Inorder Traversal",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/morris-inorder-traversal/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Apple,LinkedIn"
+      },
+      {
+        "id": "p-17-2",
+        "title": "Diameter of a Tree",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/diameter-of-a-tree/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Goldman Sachs"
+      },
+      {
+        "id": "p-17-3",
+        "title": "Are 2 Trees Identical or Not",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/are-2-trees-identical-or-not/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Oracle"
+      },
+      {
+        "id": "p-17-4",
+        "title": "Check if BT Mirror of itself or not",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/check-if-bt-mirror-of-itself-or-not/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Visa"
+      },
+      {
+        "id": "p-17-5",
+        "title": "Subtree of Another Tree",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/subtree-of-another-tree/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Oracle"
+      },
+      {
+        "id": "p-17-6",
+        "title": "Is Tree Height Balanced",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/is-tree-height-balanced/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Apple"
+      }
+    ]
+  },
+  {
+    "id": "day-18",
+    "title": "Day 18 : Binary Trees (Part 3)",
+    "problems": [
+      {
+        "id": "p-18-1",
+        "title": "Bottom View of a Tree",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/bottom-view-of-a-tree/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Apple"
+      },
+      {
+        "id": "p-18-2",
+        "title": "Top View of a Tree",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/top-view-of-a-tree/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Google,Google"
+      },
+      {
+        "id": "p-18-3",
+        "title": "Lowest Common Ancestor (LCA)",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/lowest-common-ancestor-lca/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,LinkedIn"
+      },
+      {
+        "id": "p-18-4",
+        "title": "Kth Level of Tree",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/kth-level-of-tree/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Meta"
+      },
+      {
+        "id": "p-18-5",
+        "title": "Construct BT from Inorder & Preorder",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/construct-bt-from-inorder-preorder/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Oracle"
+      },
+      {
+        "id": "p-18-6",
+        "title": "Transform to Sum Tree",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/transform-to-sum-tree/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Google"
+      }
+    ]
+  },
+  {
+    "id": "day-19",
+    "title": "Day 19 : Binary Trees (Part 4)",
+    "problems": [
+      {
+        "id": "p-19-1",
+        "title": "Flatten BT to LL",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/flatten-bt-to-ll/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Visa"
+      },
+      {
+        "id": "p-19-2",
+        "title": "Max Path Sum",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/max-path-sum/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Microsoft"
+      },
+      {
+        "id": "p-19-3",
+        "title": "Max Width of BT",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/max-width-of-bt/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Visa"
+      },
+      {
+        "id": "p-19-4",
+        "title": "Construct BT from Inorder and Postorder",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/construct-bt-from-inorder-and-postorder/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Apple"
+      },
+      {
+        "id": "p-19-5",
+        "title": "Zig Zag Traversal of BT",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/zig-zag-traversal-of-bt/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Google"
+      },
+      {
+        "id": "p-19-6",
+        "title": "Kth Ancestor",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/kth-ancestor/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Oracle"
+      }
+    ]
+  },
+  {
+    "id": "day-20",
+    "title": "Day 20 : BST (Part 1)",
+    "problems": [
+      {
+        "id": "p-20-1",
+        "title": "Kth largest in BST",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/kth-largest-in-bst/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Goldman Sachs"
+      },
+      {
+        "id": "p-20-2",
+        "title": "Sorted Array to Balanced BST",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/sorted-array-to-balanced-bst/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Microsoft"
+      },
+      {
+        "id": "p-20-3",
+        "title": "Kth Smallest in BST",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/kth-smallest-in-bst/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Amazon"
+      },
+      {
+        "id": "p-20-4",
+        "title": "LCA in BST",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/lca-in-bst/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Apple"
+      },
+      {
+        "id": "p-20-5",
+        "title": "Validate BST",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/validate-bst/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Adobe"
+      }
+    ]
+  },
+  {
+    "id": "day-21",
+    "title": "Day 21 : BST (Part 2)",
+    "problems": [
+      {
+        "id": "p-21-1",
+        "title": "Recover BST",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/recover-bst/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Visa"
+      },
+      {
+        "id": "p-21-2",
+        "title": "Populate Next Right Pointers",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/populate-next-right-pointers/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Apple"
+      },
+      {
+        "id": "p-21-3",
+        "title": "Construct from Preorder",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/construct-from-preorder/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Google,Microsoft"
+      },
+      {
+        "id": "p-21-4",
+        "title": "BST Iterator",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/bst-iterator/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Adobe"
+      },
+      {
+        "id": "p-21-5",
+        "title": "Flatten BST to Sorted list",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/flatten-bst-to-sorted-list/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Adobe"
+      }
+    ]
+  },
+  {
+    "id": "day-22",
+    "title": "Day 22 : BST (Part 3)",
+    "problems": [
+      {
+        "id": "p-22-1",
+        "title": "Merge 2 BSTs",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/merge-2-bsts/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Google"
+      },
+      {
+        "id": "p-22-2",
+        "title": "Serialize & Deserialize BST",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/serialize-deserialize-bst/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Apple"
+      },
+      {
+        "id": "p-22-3",
+        "title": "Inorder Predecessor",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/inorder-predecessor/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Google,Amazon"
+      },
+      {
+        "id": "p-22-4",
+        "title": "Largest BST in BT",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/largest-bst-in-bt/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Microsoft"
+      },
+      {
+        "id": "p-22-5",
+        "title": "Inorder Successor",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/inorder-successor/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Goldman Sachs"
+      }
+    ]
+  },
+  {
+    "id": "day-23",
+    "title": "Day 23 : Heaps",
+    "problems": [
+      {
+        "id": "p-23-1",
+        "title": "Merge K Sorted Arrays",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/merge-k-sorted-arrays/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Amazon"
+      },
+      {
+        "id": "p-23-2",
+        "title": "K most Frequent Elements",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/k-most-frequent-elements/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Goldman Sachs"
+      },
+      {
+        "id": "p-23-3",
+        "title": "Median from Stream",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/median-from-stream/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Microsoft"
+      },
+      {
+        "id": "p-23-4",
+        "title": "Smallest Range in K Sorted List",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/smallest-range-in-k-sorted-list/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Google"
+      },
+      {
+        "id": "p-23-5",
+        "title": "Kth Smallest Element",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/kth-smallest-element/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Adobe"
+      },
+      {
+        "id": "p-23-6",
+        "title": "Heap Sort",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/heap-sort/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Google,Visa"
+      }
+    ]
+  },
+  {
+    "id": "day-24",
+    "title": "Day 24 : Tries",
+    "problems": [
+      {
+        "id": "p-24-1",
+        "title": "Word Break Problem",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/word-break-problem/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Adobe"
+      },
+      {
+        "id": "p-24-2",
+        "title": "Implement a Trie",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/implement-a-trie/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Microsoft"
+      },
+      {
+        "id": "p-24-3",
+        "title": "Longest String with All Prefix",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/longest-string-with-all-prefix/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Apple"
+      },
+      {
+        "id": "p-24-4",
+        "title": "Implement a Phone Directory",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/implement-a-phone-directory/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Oracle"
+      },
+      {
+        "id": "p-24-5",
+        "title": "Longest Common Prefix",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/longest-common-prefix/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Meta"
+      }
+    ]
+  },
+  {
+    "id": "day-25",
+    "title": "Day 25 : Graphs (Part 1)",
+    "problems": [
+      {
+        "id": "p-25-1",
+        "title": "DFS : Depth First Search",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/dfs-depth-first-search/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Visa"
+      },
+      {
+        "id": "p-25-2",
+        "title": "BFS : Breadth First Search",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/bfs-breadth-first-search/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,LinkedIn"
+      },
+      {
+        "id": "p-25-3",
+        "title": "Detect Cycle in Undirected using BFS",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/detect-cycle-in-undirected-using-bfs/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Adobe"
+      },
+      {
+        "id": "p-25-4",
+        "title": "Detect Cycle in Undirected using DFS",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/detect-cycle-in-undirected-using-dfs/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Google,Apple"
+      },
+      {
+        "id": "p-25-5",
+        "title": "Detect Cycle in Directed using DFS",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/detect-cycle-in-directed-using-dfs/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Microsoft"
+      },
+      {
+        "id": "p-25-6",
+        "title": "Detect Cycle in Directed using BFS",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/detect-cycle-in-directed-using-bfs/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Microsoft"
+      }
+    ]
+  },
+  {
+    "id": "day-26",
+    "title": "Day 26 : Graphs (Part 2)",
+    "problems": [
+      {
+        "id": "p-26-1",
+        "title": "Topological Sorting (DFS)",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/topological-sorting-dfs/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Meta"
+      },
+      {
+        "id": "p-26-2",
+        "title": "Flood Fill Algorithm",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/flood-fill-algorithm/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Google"
+      },
+      {
+        "id": "p-26-3",
+        "title": "Topological Sorting (BFS)",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/topological-sorting-bfs/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Adobe"
+      },
+      {
+        "id": "p-26-4",
+        "title": "Course Schedule II",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/course-schedule-ii/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Amazon"
+      },
+      {
+        "id": "p-26-5",
+        "title": "Cheapest Flights Within K Stops",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Oracle"
+      },
+      {
+        "id": "p-26-6",
+        "title": "Dijkstra's Algorithm",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/dijkstras-algorithm/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Google"
+      }
+    ]
+  },
+  {
+    "id": "day-27",
+    "title": "Day 27 : Graphs (Part 3)",
+    "problems": [
+      {
+        "id": "p-27-1",
+        "title": "Kruskal's Algorithm (MST)",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/kruskals-algorithm-mst/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Meta"
+      },
+      {
+        "id": "p-27-2",
+        "title": "Prim's Algorithm (MST)",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/prims-algorithm-mst/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Google,Amazon"
+      },
+      {
+        "id": "p-27-3",
+        "title": "Rotting Oranges",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/rotting-oranges/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Amazon"
+      },
+      {
+        "id": "p-27-4",
+        "title": "Clone a Graph",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/clone-a-graph/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Amazon"
+      },
+      {
+        "id": "p-27-5",
+        "title": "Floyd Warshall Algorithm",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/floyd-warshall-algorithm/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Amazon"
+      },
+      {
+        "id": "p-27-6",
+        "title": "Bellman Ford Algorithm",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/bellman-ford-algorithm/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Google"
+      },
+      {
+        "id": "p-27-7",
+        "title": "01 Matrix",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/01-matrix/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Adobe"
+      }
+    ]
+  },
+  {
+    "id": "day-28",
+    "title": "Day 28 : Graphs (Part 4)",
+    "problems": [
+      {
+        "id": "p-28-1",
+        "title": "Number of Islands",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/number-of-islands/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Google"
+      },
+      {
+        "id": "p-28-2",
+        "title": "Is Graph Bipartite?",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/is-graph-bipartite/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Microsoft"
+      },
+      {
+        "id": "p-28-3",
+        "title": "Strongly Connected Components (Kosaraju's)",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/strongly-connected-components-kosarajus/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Meta,LinkedIn"
+      },
+      {
+        "id": "p-28-4",
+        "title": "Most Stones Removed",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/most-stones-removed/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Google,LinkedIn"
+      },
+      {
+        "id": "p-28-5",
+        "title": "Number of Ways to Arrive at Destination",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Apple"
+      },
+      {
+        "id": "p-28-6",
+        "title": "Number of Provinces",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/number-of-provinces/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,LinkedIn"
+      },
+      {
+        "id": "p-28-7",
+        "title": "Critical Connections in a Network",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/critical-connections-in-a-network/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Apple"
+      }
+    ]
+  },
+  {
+    "id": "day-29",
+    "title": "Day 29 : DP (Part 1)",
+    "problems": [
+      {
+        "id": "p-29-1",
+        "title": "0-1 Knapsack",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/0-1-knapsack/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Amazon"
+      },
+      {
+        "id": "p-29-2",
+        "title": "Buy & Sell Stocks I",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/buy-sell-stocks-i/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Meta"
+      },
+      {
+        "id": "p-29-3",
+        "title": "Target Sum Subset",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/target-sum-subset/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Google,LinkedIn"
+      },
+      {
+        "id": "p-29-4",
+        "title": "Coin Change",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/coin-change/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Visa"
+      },
+      {
+        "id": "p-29-5",
+        "title": "Unbounded Knapsack",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/unbounded-knapsack/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Meta"
+      }
+    ]
+  },
+  {
+    "id": "day-30",
+    "title": "Day 30 : DP (Part 2)",
+    "problems": [
+      {
+        "id": "p-30-1",
+        "title": "Longest Common Substring",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/longest-common-substring/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Microsoft"
+      },
+      {
+        "id": "p-30-2",
+        "title": "Longest Common Subsequence",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/longest-common-subsequence/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Apple"
+      },
+      {
+        "id": "p-30-3",
+        "title": "Longest Increasing Subsequence",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Meta,LinkedIn"
+      },
+      {
+        "id": "p-30-4",
+        "title": "Edit Distance",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/edit-distance/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Adobe"
+      },
+      {
+        "id": "p-30-5",
+        "title": "Longest Palindromic Subsequence",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/longest-palindromic-subsequence/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Oracle"
+      },
+      {
+        "id": "p-30-6",
+        "title": "Buy & Sell Stocks II",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/buy-sell-stocks-ii/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Visa"
+      }
+    ]
+  },
+  {
+    "id": "day-31",
+    "title": "Day 31 : DP (Part 3)",
+    "problems": [
+      {
+        "id": "p-31-1",
+        "title": "Nth Catalan",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/nth-catalan/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Oracle"
+      },
+      {
+        "id": "p-31-2",
+        "title": "Unique BSTs",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/unique-bsts/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Meta"
+      },
+      {
+        "id": "p-31-3",
+        "title": "Rod Cutting",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/rod-cutting/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Meta"
+      },
+      {
+        "id": "p-31-4",
+        "title": "Palindromic Partitioning",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/palindromic-partitioning/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Apple,Adobe"
+      },
+      {
+        "id": "p-31-5",
+        "title": "MCM",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/mcm/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Oracle"
+      }
+    ]
+  },
+  {
+    "id": "day-32",
+    "title": "Day 32 : DP (Part 4)",
+    "problems": [
+      {
+        "id": "p-32-1",
+        "title": "Minimum Partitioning",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/minimum-partitioning/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Visa,Visa"
+      },
+      {
+        "id": "p-32-2",
+        "title": "Max Product Subarray",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/max-product-subarray/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Visa"
+      },
+      {
+        "id": "p-32-3",
+        "title": "Wildcard Pattern Matching",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/wildcard-pattern-matching/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,LinkedIn"
+      },
+      {
+        "id": "p-32-4",
+        "title": "Longest Bitonic Subsequence",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/longest-bitonic-subsequence/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,Oracle"
+      },
+      {
+        "id": "p-32-5",
+        "title": "Egg Dropping",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/egg-dropping/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Google"
+      }
+    ]
+  },
+  {
+    "id": "day-33",
+    "title": "Day 33 : Greedy",
+    "problems": [
+      {
+        "id": "p-33-1",
+        "title": "Assign Cookies",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/assign-cookies/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Google,Amazon"
+      },
+      {
+        "id": "p-33-2",
+        "title": "Indian Coins",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/indian-coins/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "LinkedIn,Goldman Sachs"
+      },
+      {
+        "id": "p-33-3",
+        "title": "Fractional Knapsack",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/fractional-knapsack/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Apple"
+      },
+      {
+        "id": "p-33-4",
+        "title": "Job Scheduling",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/job-scheduling/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Amazon,LinkedIn"
+      },
+      {
+        "id": "p-33-5",
+        "title": "Activity Selection",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/activity-selection/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Google,Amazon"
+      },
+      {
+        "id": "p-33-6",
+        "title": "Max Length of Pair Chain",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/max-length-of-pair-chain/",
+        "difficulty": "Medium",
+        "timeEstimate": "30Min",
+        "companies": "Goldman Sachs,Microsoft"
+      }
+    ]
+  },
+  {
+    "id": "day-34",
+    "title": "Day 34 : Miscellaneous",
+    "problems": [
+      {
+        "id": "p-34-1",
+        "title": "Power Set",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/power-set/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Microsoft,Meta"
+      },
+      {
+        "id": "p-34-2",
+        "title": "Max XOR of Two Numbers",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/max-xor-of-two-numbers/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Oracle,Google"
+      },
+      {
+        "id": "p-34-3",
+        "title": "Power of Two",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/power-of-two/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,LinkedIn"
+      },
+      {
+        "id": "p-34-4",
+        "title": "XOR Beauty of Array",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/xor-beauty-of-array/",
+        "difficulty": "Hard",
+        "timeEstimate": "30Min",
+        "companies": "Adobe,Meta"
+      },
+      {
+        "id": "p-34-5",
+        "title": "Watering Plants II",
+        "articleUrl": "#",
+        "youtubeUrl": "#",
+        "practiceUrl": "https://leetcode.com/problems/watering-plants-ii/",
+        "difficulty": "Easy",
+        "timeEstimate": "30Min",
+        "companies": "Meta,Meta"
+      }
+    ]
+  }
+]

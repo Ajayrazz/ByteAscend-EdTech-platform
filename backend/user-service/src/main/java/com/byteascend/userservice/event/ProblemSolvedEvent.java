@@ -7,13 +7,15 @@ public class ProblemSolvedEvent implements Serializable {
     private UUID userId;
     private String problemId;
     private long timestamp;
+    private boolean isPotd;
 
     public ProblemSolvedEvent() {}
 
-    public ProblemSolvedEvent(UUID userId, String problemId, long timestamp) {
+    public ProblemSolvedEvent(UUID userId, String problemId, long timestamp, boolean isPotd) {
         this.userId = userId;
         this.problemId = problemId;
         this.timestamp = timestamp;
+        this.isPotd = isPotd;
     }
 
     public UUID getUserId() {
@@ -38,5 +40,13 @@ public class ProblemSolvedEvent implements Serializable {
 
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public boolean isPotd() {
+        return isPotd;
+    }
+
+    public void setPotd(boolean potd) {
+        isPotd = potd;
     }
 }
