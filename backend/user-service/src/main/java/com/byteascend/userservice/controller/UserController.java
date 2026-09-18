@@ -26,6 +26,27 @@ public class UserController {
     }
 
     @Autowired
+    private com.byteascend.userservice.repository.UserRepository userRepository2; // Note: using direct repo here since it's a simple query
+
+    @GetMapping("/leaderboard")
+    public ResponseEntity<java.util.List<com.byteascend.userservice.dto.LeaderboardUserDto>> getLeaderboard() {
+        java.util.List<User> topUsers = userRepository2.findTop100ByOrderByTotalScoreDesc();
+        
+        java.util.List<com.byteascend.userservice.dto.LeaderboardUserDto> dtos = topUsers.stream()
+            .map(u -> com.byteascend.userservice.dto.LeaderboardUserDto.builder()
+                .id(u.getId())
+                .fullName(u.getFullName())
+                .nickname(u.getNickname())
+                .profilePictureUrl(u.getProfilePictureUrl())
+                .totalScore(u.getTotalScore())
+                .streakCount(u.getStreakCount())
+                .build())
+            .collect(java.util.stream.Collectors.toList());
+            
+        return ResponseEntity.ok(dtos);
+    }
+
+    @Autowired
     private com.byteascend.userservice.repository.UserBadgeRepository userBadgeRepository;
 
     @GetMapping("/badges")
