@@ -63,6 +63,14 @@ The backend is split into independently scalable microservices:
 *   **Interactive Code Editor**: Syntax highlighting, multi-language support, and customizable themes.
 *   **Secure Execution**: Isolated, secure code compilation and execution using the Judge0 sandbox engine.
 
+### 6. 🌍 Global Leaderboard
+*   **Competitive Ranking**: Compare your progress with peers and top performers on a real-time global leaderboard.
+*   **Dynamic Scoring**: Your rank is dynamically calculated based on solved problems, POTD completion, and overall platform engagement.
+
+### 7. ⚙️ User Settings & Preferences
+*   **Tabbed Navigation**: Easily manage your account details, privacy, and interface preferences via a clean, intuitive settings dashboard.
+*   **Secure Authorization**: Advanced API authorization headers ensure your data remains private and secure.
+
 ---
 
 ## 🛠️ Getting Started (Local Development)
